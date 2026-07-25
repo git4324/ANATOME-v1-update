@@ -46,7 +46,26 @@ cp back_end/.env.example back_end/.env
 
 ---
 
-# Step 3 - Start the Backend
+# Step 3 - Start the Application with Docker (Recommended)
+
+If you have [Docker](https://www.docker.com/products/docker-desktop/) installed, you can start both the frontend and backend with a single command.
+
+1. Open a terminal in the project root.
+2. Run the following command:
+```bash
+docker compose up -d --build
+```
+3. Once built and running, open your browser and visit:
+```
+http://localhost
+```
+*(The backend API will also be running on `http://localhost:8000`)*
+
+If you prefer to run the project manually without Docker, skip this step and continue to Step 4.
+
+---
+
+# Step 4 - Start the Backend (Manual Method)
 
 Open a terminal in the project root and navigate to the backend folder:
 ```bash
@@ -93,7 +112,7 @@ Uvicorn running on http://127.0.0.1:8000
 
 ---
 
-# Step 4 - Start the Frontend
+# Step 5 - Start the Frontend (Manual Method)
 
 Open **a second terminal** in the project root and navigate to the frontend folder:
 ```bash
@@ -113,7 +132,7 @@ Local: http://localhost:5173/
 
 ---
 
-# Step 5 - Open the Application
+# Step 6 - Open the Application (Manual Method)
 
 Open your browser and visit the address shown in the frontend terminal.
 
